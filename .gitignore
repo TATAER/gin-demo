@@ -1,0 +1,4 @@
+*.text
+.idea/
+go.sum
+log/

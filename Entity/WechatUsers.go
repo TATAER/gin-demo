@@ -36,7 +36,7 @@ func GetUserDetailById(id int) (WechatUsers, error) {
 }
 
 /**
-更新用户信息
+更新用户信息.
 */
 func UpdateDetailById(data WechatUsers) error {
 	err := Dao.DB.Table("wechat_users").Where("id = ?", data.Id).Update(data).Error
